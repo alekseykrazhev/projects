@@ -1,0 +1,18 @@
+﻿<h1 style="margin-top: 70px;">Catalog of all computers</h1>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var computer in Model.allComputers)
+        {
+            <div class="col-lg-5">
+                <img class="img-thumbnail" src="@computer.img" alt="@computer.name" />
+                <h2> @computer.name </h2>
+                <p>@computer.shortDesc</p>
+                <p>@computer.longDesc</p>
+                <p> Price: @computer.price.ToString("C2") </p>
+                <p><a class="btn btn-warning" href="https://www.instagram.com/artsem_opanasenko/">More details</a></p>
+
+            </div>
+        }
+    }
+</div>
+

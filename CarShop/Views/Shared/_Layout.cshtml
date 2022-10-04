@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><ya-tr-span data-index="0-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Chest-computer" data-translation="Chest-computer" data-type="trSpan">Chest-computers</ya-tr-span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navbar collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><ya-tr-span data-index="1-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Home" data-translation="Главная" data-type="trSpan">Home page</ya-tr-span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><ya-tr-span data-index="2-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Link" data-translation="Link" data-type="trSpan">Link</ya-tr-span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><ya-tr-span data-index="4-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Search" data-translation="Поиск" data-type="trSpan">Search</ya-tr-span></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class=" container mt-5">
+        @RenderBody()
+    </div>
+    <footer class="container">
+        <p class=" float-right"><a href="#">Back to top</a></p>
+        <p> © 2017–2021 Company, Inc.<a href="#">Privacy</a> <a href="#">Terms</a></p>
+    </footer>
+    <script stc="~/js/bootstrap.min.js"></script>
+</body>
+</html>
